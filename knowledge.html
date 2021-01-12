@@ -1,0 +1,378 @@
+<!--
+=========================================================
+* 杭州消防信息可视化系统 - v1.0.0
+=========================================================
+* Copyright  启真湖底划水
+=========================================================
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="杭州消防信息可视化系统">
+  <meta name="author" content="启真湖底划水">
+  <title>杭州消防信息可视化系统</title>
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/logo.png" type="image/png">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+  <!-- Icons -->
+  <link rel="stylesheet" href="assets/vendor/nucleo/css/nucleo.css" type="text/css">
+  <link rel="stylesheet" href="assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
+  <!-- Page plugins -->
+  <!-- Argon CSS -->
+  <link rel="stylesheet" href="assets/css/argon.css?v=1.2.0" type="text/css">
+  <!-- 引入 Bootstrap -->
+    <!-- Core -->
+    <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/js-cookie/js.cookie.js"></script>
+    <script src="assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+    <script src="assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+
+
+  <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <!-- Sidenav -->
+  <nav class="sidenav navbar navbar-vertical  fixed-left  navbar-expand-xs navbar-light bg-white" id="sidenav-main">
+    <div class="scrollbar-inner">
+      <!-- Brand -->
+      <!--<div class="sidenav-header  align-items-center" style="height:200px;">
+        <a class="navbar-brand">
+          <img src="assets/img/logo.png" class="navbar-brand-img" style="height:200px;width: 200px;" >
+        </a>
+      </div>-->
+      <div class="navbar-inner">
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+          <!-- Nav items -->
+          <!-- Heading -->
+          <h4 class="navbar-heading p-0 ">
+            <span class="title" style="font-size:x-large">杭州消防</span>
+          </h4>
+          <!-- Divider -->
+          <hr class="my-3">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link " href="index.html">
+                <i class="ni ni-chart-pie-35 text-primary"></i>
+                <span class="nav-link-text" style="font-size:medium">消防数据可视化</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="onlinemap.html">
+                <i class="ni ni-pin-3 text-primary"></i>
+                <span class="nav-link-text" style="font-size:medium">在线消防地图</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="routemanage.html">
+                <i class="ni ni-compass-04 text-primary"></i>
+                <span class="nav-link-text" style="font-size:medium">消防出警规划</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="accessibility.html">
+                <i class="ni ni-key-25 text-primary"></i>
+                <span class="nav-link-text" style="font-size:medium">消防可达度分析</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="info.html">
+                <i class="ni ni-bullet-list-67 text-primary"></i>
+                <span class="nav-link-text" style="font-size:medium">最新火情信息</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="knowledge.html">
+                <i class="ni ni-ruler-pencil text-primary"></i>
+                <span class="nav-link-text" style="font-size:medium">消防小贴士</span>
+              </a>
+          </li> 
+  
+
+            <!--
+            <li class="nav-item">
+              <a class="nav-link" href="examples/upgrade.html">
+                <i class="ni ni-send text-dark"></i>
+                <span class="nav-link-text">Upgrade</span>
+              </a>
+            </li>
+            -->
+          </ul>
+          
+          
+          <!-- Navigation -->
+          
+          <ul class="navbar-nav mb-md-3">
+            <!--
+            <li class="nav-item">
+              <a class="nav-link" href="https://demos.creative-tim.com/argon-dashboard/docs/getting-started/overview.html" target="_blank">
+                <i class="ni ni-spaceship"></i>
+                <span class="nav-link-text">Getting started</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://demos.creative-tim.com/argon-dashboard/docs/foundation/colors.html" target="_blank">
+                <i class="ni ni-palette"></i>
+                <span class="nav-link-text">Foundation</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://demos.creative-tim.com/argon-dashboard/docs/components/alerts.html" target="_blank">
+                <i class="ni ni-ui-04"></i>
+                <span class="nav-link-text">Components</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://demos.creative-tim.com/argon-dashboard/docs/plugins/charts.html" target="_blank">
+                <i class="ni ni-chart-pie-35"></i>
+                <span class="nav-link-text">Plugins</span>
+              </a>
+            </li>
+            -->
+
+
+            <li class="nav-item">
+              <a class="nav-link active active-pro" href="index.html">
+                <i class="ni ni-send text-primary"></i>
+                <span class="nav-link-text">返回首页</span>
+              </a>
+            </li>
+          </ul>
+          
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Main content -->
+  <div class="main-content" id="panel">
+
+    <!-- Header -->
+    <div class="header pb-6" style="background-color: #ced4da;">
+      <div class="container-fluid"  >
+        <div class="row" >
+          <div class="col-md-12 " style="margin-top: 30px;">
+            <img alt="" src="./assets/img/pic.png" style="width: 100%;height: 100%;" />
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <!-- Page content -->
+    <!--Card-->
+    <div class="container-fluid mt--6">
+        
+      <div class="row" >
+
+        <div class="col-xl-3 col-md-6" style="margin-top: 40px;">
+          <div class="card card-stats">
+            <!-- Card body -->
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <h3 style="margin-top: 10px;" class="font-weight-bold text-uppercase text-muted mb-0">防范于未“燃”</h3S>
+                </div>
+                <div class="col-auto">
+                  <div class="icon icon-shape bg-gradient-red text-white rounded-circle shadow">
+                    <i class="ni ni-bell-55"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="row" style="margin-top: 10px;">
+                <p class="h5">
+                  人员离室锁门时，务必检查并关闭窗户及电灯、电扇、电脑、充电器等所有电器设备的电源。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-6" style="margin-top: 40px;">
+          <div class="card card-stats">
+            <!-- Card body -->
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <h3 style="margin-top: 10px;" class="font-weight-bold text-uppercase text-muted mb-0">全国消防日</h3S>
+                </div>
+                <div class="col-auto">
+                  <div class="icon icon-shape bg-gradient-red text-white rounded-circle shadow">
+                    <i class="ni ni-bell-55"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="row" style="margin-top: 10px;">
+                <p class="h5">
+                  为增加全民的消防安全意识，使“119”更加深入人心，公安部在一些省市进行“119”消防活动的基础上，于1992年发起，将每年的11月9日定为全国的“消防日”。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-6" style="margin-top: 40px;">
+          <div class="card card-stats">
+            <!-- Card body -->
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <h3 style="margin-top: 10px;" class="font-weight-bold text-uppercase text-muted mb-0">家用电器</h3S>
+                </div>
+                <div class="col-auto">
+                  <div class="icon icon-shape bg-gradient-red text-white rounded-circle shadow">
+                    <i class="ni ni-bell-55"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="row" style="margin-top: 10px;">
+                <p class="h5">
+                  使用电磁炉、电热毯、电熨斗等电器时，要避免因线路老化、经常搬运导致电线受损而引发火灾。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-6" style="margin-top: 40px;">
+          <div class="card card-stats">
+            <!-- Card body -->
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <h3 style="margin-top: 10px;" class="font-weight-bold text-uppercase text-muted mb-0">不可乱扔烟头</h3S>
+                </div>
+                <div class="col-auto">
+                  <div class="icon icon-shape bg-gradient-red text-white rounded-circle shadow">
+                    <i class="ni ni-bell-55"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="row" style="margin-top: 10px;">
+                <p class="h5">
+                  不可随意将烟蒂、火柴杆扔在废纸篓内或者可燃杂物上，不要躺在床上或沙发上吸烟。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-6" >
+          <div class="card card-stats">
+            <!-- Card body -->
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <h3 style="margin-top: 10px;" class="font-weight-bold text-uppercase text-muted mb-0">彻底清理可燃物</h3S>
+                </div>
+                <div class="col-auto">
+                  <div class="icon icon-shape bg-gradient-red text-white rounded-circle shadow">
+                    <i class="ni ni-bell-55"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="row" style="margin-top: 10px;">
+                <p class="h5">
+                  要全面清理房屋前后的可燃杂物，稻草堆禁止在村内、居民房屋附近堆放，严禁在野外燃烧稻草。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-6" >
+          <div class="card card-stats">
+            <!-- Card body -->
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <h3 style="margin-top: 10px;" class="font-weight-bold text-uppercase text-muted mb-0">注意吸烟</h3S>
+                </div>
+                <div class="col-auto">
+                  <div class="icon icon-shape bg-gradient-red text-white rounded-circle shadow">
+                    <i class="ni ni-bell-55"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="row" style="margin-top: 10px;">
+                <p class="h5">
+                  不要躺在沙发上或者床上抽烟，更不要在疲劳状态或喝酒以后抽烟，以防烟头掉落在可燃物上引发火灾事故，干草地、草堆附近要禁止乱扔烟头，防止未熄灭的烟头、火柴梗引起火灾。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-6" >
+          <div class="card card-stats">
+            <!-- Card body -->
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <h3 style="margin-top: 10px;" class="font-weight-bold text-uppercase text-muted mb-0">不要玩火</h3S>
+                </div>
+                <div class="col-auto">
+                  <div class="icon icon-shape bg-gradient-red text-white rounded-circle shadow">
+                    <i class="ni ni-bell-55"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="row" style="margin-top: 10px;">
+                <p class="h5">
+                  家长要把火柴、打火机等物品放在孩子不易拿到的地方，看到孩子正在玩弄火柴、打火机或者是在炉、灶旁点火，要严加教育。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-6" >
+          <div class="card card-stats">
+            <!-- Card body -->
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <h3 style="margin-top: 10px;" class="font-weight-bold text-uppercase text-muted mb-0">灭火器使用</h3S>
+                </div>
+                <div class="col-auto">
+                  <div class="icon icon-shape bg-gradient-red text-white rounded-circle shadow">
+                    <i class="ni ni-bell-55"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="row" style="margin-top: 10px;">
+                <p class="h5">
+                  灭火器使用有四法：一是拔掉销子，二是取下管子，三是压下靶子，四是对准火苗子；
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <footer class="footer pt-0">
+        <div class="row align-items-center justify-content-lg-between">
+          <div class="col-lg-6">
+            <div class="copyright text-center  text-lg-left  text-muted">
+              &copy; 2020 <a class="font-weight-bold ml-1" target="_blank">copyright @ 启真湖底划水</a>
+            </div>
+        </div>
+      </footer>
+    
+    </div>
+  </div>
+  <!-- Argon Scripts -->
+  <!-- Core -->
+  <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/js-cookie/js.cookie.js"></script>
+  <script src="assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+  <script src="assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+  <!-- Optional JS -->
+  <script src="assets/vendor/chart.js/dist/Chart.min.js"></script>
+  <script src="assets/vendor/chart.js/dist/Chart.extension.js"></script>
+  <!-- Argon JS -->
+  <script src="assets/js/argon.js?v=1.2.0"></script>
+</body>
+
+</html>
